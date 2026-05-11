@@ -1,0 +1,23 @@
+exp 7 - Create a web page that uses JavaScript to display dynamic content using DOM
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+
+<body>
+
+    <h1 id="result">Dynamic Content using DOM</h1>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <script>
+
+        function showMessage(){
+            document.getElementById("result").innerHTML ="Welcome! Current Time is: " + new Date().toLocaleTimeString();
+        }
+
+    </script>
+
+</body>
+</html>

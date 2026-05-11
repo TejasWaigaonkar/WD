@@ -1,0 +1,41 @@
+exp 6 -Write a JavaScript program to validate form inputs (e.g., email, empty fields).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+    <script>
+    function data() {
+        var a=document.getElementById("userId").value;
+        var b=document.getElementById("contact").value;
+        var c=document.getElementById("password").value;
+        var d=document.getElementById("confirmPassword").value;
+
+        if(a==""||b==""||c==""||d==""){
+            alert("All fields are required");
+        }
+        else if(b.length<10||b.length>10){
+            alert("Contact number must be 10 digits");
+        }
+        else if(isNaN(b)){
+            alert("Contact number must be a valid number");
+        }
+        else if(c!=d){
+            alert("Passwords do not match");
+        }
+        else {
+            true;
+        }
+    }
+    </script>
+
+    <form onsubmit = "return data()">
+        UserId: <input type="text" id="userId"><br>
+        Contact: <input type="text" id="contact"><br>
+        Password: <input type="password" id="password"><br>
+        Confirm Password: <input type="password" id="confirmPassword"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
