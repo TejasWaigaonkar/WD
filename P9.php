@@ -25,3 +25,33 @@ Exp 9 - Write a PHP program to display the current date and time in a welcome pa
 </div>
 </body>
 </html>
+
+
+Aim-
+To create a PHP web page that displays a welcome message along with the current date and time.
+
+Objective-
+To understand basic PHP syntax and structure.
+To learn how to embed PHP code inside an HTML page.
+To use built-in PHP functions like date() and date_default_timezone_set().
+To display dynamic content such as current date and time.
+
+Software Requirement-
+XAMPP / WAMP Server (for running PHP)
+Text Editor (Notepad / Visual Studio Code / Sublime Text)
+Web Browser (Google Chrome / Mozilla Firefox / Microsoft Edge)
+
+Theory-
+PHP (Hypertext Preprocessor) is a server-side scripting language used to create dynamic web pages.
+
+In this program:
+PHP code is written inside <?php ... ?> tags.
+date_default_timezone_set("Asia/Kolkata") sets the time zone to Indian Standard Time.
+date("l, d F Y") is used to display the current date in a readable format.
+date("h:i:s A") is used to display the current time in 12-hour format with AM/PM.
+echo is used to output text and variables to the web page.
+
+This program demonstrates how PHP can generate dynamic content based on server time.
+
+Conclusion-
+Thus, we successfully created a PHP program to display a welcome message along with the current date and time. This helped in understanding basic PHP syntax and dynamic content generation.
